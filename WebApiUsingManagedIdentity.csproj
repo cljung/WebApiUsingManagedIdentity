@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <VersionPropertyYear>$([System.DateTime]::UtcNow.ToString("yy"))</VersionPropertyYear>
+    <VersionPropertyMonthDay>$([System.DateTime]::UtcNow.ToString("MMdd"))</VersionPropertyMonthDay>
+    <VersionPropertyHourMin>$([System.DateTime]::UtcNow.ToString("hhmm"))</VersionPropertyHourMin>
+    <Version>1.$(VersionPropertyYear).$(VersionPropertyMonthDay).$(VersionPropertyHourMin)</Version>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.21.0" />
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.11.2" />
+    <PackageReference Include="Microsoft.Graph" Version="5.105.0" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="4.8.0" />
+  </ItemGroup>
+
+</Project>

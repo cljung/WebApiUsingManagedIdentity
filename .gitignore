@@ -55,3 +55,10 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+.vs/
+appsettings.[Dd]evelopment.json
+scripts/*.[Dd]evelopment.*.ps1
+
+Properties/PublishProfiles/
+*.user
