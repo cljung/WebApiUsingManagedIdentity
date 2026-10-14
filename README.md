@@ -90,7 +90,7 @@ $ManagedIdentityObjectId = "YOUR_FUNCTION_MANAGED_IDENTITY_OBJECT_ID"
 	1. Grant admin consent
 	1. Create a client secret
     1. Go to `Authentication`, click `+ Add Redirect Uri`, select `Mobile & Desktop apps`, select `https://login.microsoftonline.com/common/oauth2/nativeclient`
-    1. Go to `Authentication` > `Settings`, enable `Allow public client flow` and select both `Access tokens` and `ID tokens`
+    1. Go to `Authentication` > `Settings`, enable `Allow public client flow` 
 1. Update both appsettings.json files with the details
 
 ### Managed Identity configuration
